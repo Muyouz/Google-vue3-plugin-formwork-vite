@@ -5,14 +5,6 @@ import manifest from './src/manifest.js' // Node 14 & 16
 // import manifest from './src/manifest.json' assert { type: 'json' } // Node >=17
 
 export default defineConfig({
-    css: {
-        preprocessorOptions : {
-            scss: {
-                additionalData: `@import "/src/assets/css/main.css";`,
-            },
-        },
-    },
-
 	resolve: {
 		alias: {
 			'@': '/src/',
@@ -23,7 +15,7 @@ export default defineConfig({
 			compress: {
 				drop_console: true,
 			},
-		}, // 生存环境移除console
+		}, // 生存环境移除console、
 	},
 	plugins: [vue(), crx({ manifest })],
 })
