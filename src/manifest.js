@@ -36,7 +36,6 @@ export default defineManifest(async (env) => ({
 			"js": [
 				"src/content-script/index.js"
 			],
-			"css": ["css/main.css"],
 			"run_at": "document_start"
 		}
 	],
@@ -45,7 +44,7 @@ export default defineManifest(async (env) => ({
     type: 'module',
   },
   web_accessible_resources: [{
-		"resources": ["img/*", "icon/*"],
+        "resources": ["src/assets/css/*", "src/assets/icons/*"],
 		"matches": ["<all_urls>"]
 	}],
 	content_security_policy: {
