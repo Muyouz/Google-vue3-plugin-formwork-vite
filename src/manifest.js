@@ -44,7 +44,7 @@ export default defineManifest(async (env) => ({
     type: 'module',
   },
   web_accessible_resources: [{
-        "resources": ["src/assets/css/*", "src/assets/icons/*"],
+        "resources": ["src/assets/css/*", "src/assets/icon/*"],
 		"matches": ["<all_urls>"]
 	}],
 	content_security_policy: {
